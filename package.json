@@ -1,0 +1,28 @@
+{
+	"name": "@davidofferman/hugo-bin",
+	"version": "0.55.0",
+	"description": "Hugo wrapper that makes it seamlessly available as a local dependency",
+	"license": "MIT",
+	"repository": "davidofferman/hugo-bin",
+	"bin": {
+		"hugo": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"postinstall": "node lib/install.js"
+	},
+	"files": [
+		"index.js",
+		"cli.js",
+		"lib"
+	],
+	"keywords": [
+		"hugo"
+	],
+	"dependencies": {
+		"download": "^7.1.0",
+		"logalot": "^2.1.0"
+	}
+}
