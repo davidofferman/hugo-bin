@@ -11,7 +11,8 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"postinstall": "node lib/install.js"
+		"postinstall": "node lib/install.js",
+		"test": "ava"
 	},
 	"files": [
 		"index.js",
@@ -24,5 +25,9 @@
 	"dependencies": {
 		"download": "^7.1.0",
 		"logalot": "^2.1.0"
+	},
+	"devDependencies": {
+		"ava": "^2.2.0",
+		"request": "^2.88.0"
 	}
 }
