@@ -12,7 +12,7 @@
 	},
 	"scripts": {
 		"postinstall": "node lib/install.js",
-		"test": "ava"
+		"test": "xo && ava"
 	},
 	"files": [
 		"index.js",
@@ -27,6 +27,7 @@
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
-		"request": "^2.88.0"
+		"request": "^2.88.0",
+		"xo": "^0.24.0"
 	}
 }
