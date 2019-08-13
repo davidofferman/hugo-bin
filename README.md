@@ -2,6 +2,9 @@
 
 > [Hugo](https://gohugo.io/) is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
 
+## Version
+
+The major and minor versions will match Hugo's version number, but the patch number may not match. hugo-bin may release patched versions between hugo releases.
 
 ## Install
 
