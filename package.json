@@ -4,6 +4,8 @@
 	"description": "Hugo wrapper that makes it available as a local dependency",
 	"license": "MIT",
 	"repository": "davidofferman/hugo-bin",
+	"homepage": "https://github.com/davidofferman/hugo-bin#readme",
+	"bugs": "https://github.com/davidofferman/hugo-bin/issues",
 	"bin": {
 		"hugo": "cli.js"
 	},

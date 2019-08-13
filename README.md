@@ -13,15 +13,15 @@ $ npm install --save @davidofferman/hugo-bin
 ## Usage
 
 ```js
-const {promisify} = require("util");
-const {execFile} = require("child_process");
-const hugo = require("@davidofferman/hugo-bin");
+const util = require('util');
+const cp = require('child_process');
+const hugo = require('@davidofferman/hugo-bin');
 
-const execFileP = promsify(execFile);
+const execFile = util.promisify(cp.execFile);
 
 (async () => {
 	await execFile(hugo, ["--destination", "dist"]);
-	console.log("Hugo built to \"dist\"");
+	console.log('Hugo built to "dist"');
 })();
 ```
 
