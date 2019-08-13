@@ -4,12 +4,13 @@
 
 ## Version
 
-The major and minor versions will match Hugo's version number, but the patch number may not match. hugo-bin may release patched versions between hugo releases.
+The version of this package does not relate to the Hugo release version. There will be dist-tags on the npm package in the format of `hugo-<major>.<minor>.<patch>`.
 
 ## Install
 
 ```
 $ npm install --save @davidofferman/hugo-bin
+$ npm install --save @davidofferman/hugo-bin@hugo-0.56.3
 ```
 
 
