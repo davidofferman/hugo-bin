@@ -10,7 +10,7 @@ The version of this package does not relate to the Hugo release version. There w
 
 ```
 $ npm install --save @davidofferman/hugo-bin
-$ npm install --save @davidofferman/hugo-bin@hugo-0.62.0
+$ npm install --save @davidofferman/hugo-bin@hugo-0.62.1
 ```
 
 
