@@ -1,7 +1,7 @@
 {
 	"name": "@davidofferman/hugo-bin",
-	"version": "1.9.1",
-	"hugoVersion": "0.65.1",
+	"version": "1.9.2",
+	"hugoVersion": "0.65.2",
 	"description": "Hugo wrapper that makes it available as a local dependency",
 	"license": "MIT",
 	"repository": "davidofferman/hugo-bin",
@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"ava": "^2.4.0",
-		"request": "^2.88.0",
+		"request": "^2.88.2",
 		"xo": "^0.24.0"
 	}
 }
