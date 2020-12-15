@@ -4,8 +4,12 @@ const {execFile} = require('child_process');
 const fs = require('fs');
 const test = require('ava');
 const request = require('request');
-
 const hugo = require('..');
+const hugoBin = require('../lib');
+
+test.beforeEach(async () => {
+	await hugoBin.resolve();
+});
 
 test.cb('return path to binary', t => {
 	t.plan(1);
