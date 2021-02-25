@@ -14,9 +14,9 @@ test.beforeEach(async () => {
 test.cb('return path to binary', t => {
 	t.plan(1);
 
-	fs.stat(hugo, (err, stats) => {
-		if (err) {
-			t.fail(err.message);
+	fs.stat(hugo, (error, stats) => {
+		if (error) {
+			t.fail(error.message);
 		} else {
 			t.true(stats.isFile());
 		}
@@ -38,10 +38,13 @@ test.cb('executing hugo', t => {
 test.cb('test download urls', t => {
 	const sources = require('../lib').src();
 	let cbcount = 0;
+	let i = 0;
 
 	t.plan(sources.length);
 
-	sources.forEach(src => {
+	for (i = 0; i < sources.length; ++i) {
+		const src = sources[i];
+
 		const options = {
 			uri: src.src,
 			method: 'HEAD',
@@ -61,5 +64,5 @@ test.cb('test download urls', t => {
 				t.end();
 			}
 		});
-	});
+	}
 });
