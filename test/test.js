@@ -56,8 +56,10 @@ test.cb('test download urls', t => {
 
 			if (response) {
 				t.true(response.statusCode >= 200 && response.statusCode < 400, `${response.statusCode}: ${src.src}`);
-			} else {
+			} else if (error) {
 				t.fail(error);
+			} else {
+				t.fail("Failed without error")
 			}
 
 			if (cbcount === sources.length) {
